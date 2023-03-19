@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tags</title>
+</head>
+<body>
+<h1 style="text-align: center">Short description of some tags</h1>
+
+<h2><strong>&lt;dl&gt;</strong> <strong>&lt;dt&gt;</strong> <strong>&lt;dd&gt;</strong> tags</h2>
+<p>There are 3 first tags that are united in one group to name something and give it a definition.</p>
+<dl>
+    <dt><strong>&lt;dl&gt;</strong></dt>
+    <dd>This element stands for opening a group to insert a names and definitions inside</dd>
+    <dt><strong>&lt;dt&gt;</strong></dt>
+    <dd>This one stands for declaring a term</dd>
+    <dt><strong>&lt;dd&gt;</strong></dt>
+    <dd>Last one stands for a definition of a term itself</dd>
+</dl>
+<br>
+But these tags are not the only ones to work with textual information in html.
+
+<h2><strong>&lt;pre&gt;</strong> tag</h2>
+<p>But these tags are not the only ones to work with textual information in html.
+    There is another one called <strong>&lt;pre&gt;</strong> tag. And this one allows
+    to preserve a text inside of it in a format that is actually written by a developer.</p>
+<h4>Example of <strong>&lt;pre&gt;</strong> tag</h4>
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+</pre>
+<h4>Same text but with <strong>&lt;p&gt;</strong> tag</h4>
+<p>Text in a pre element
+    is displayed in a fixed-width
+    font, and it preserves
+    both spaces and
+    line breaks.</p>
+
+<h2><strong>&lt;code&gt;</strong> tag</h2>
+<p>This element is used to show code blocks on the page with a special font,
+    but spaces and line breaks are not preserved.</p>
+<h4>Example of <strong>&lt;code&gt;</strong> tag</h4>
+<code>
+    pre { <br>
+    margin: 5px 0 20px 0; <br>
+    line-height: 1.3em; <br>
+    overflow: auto; <br>
+    }
+</code>
+<h4>Same text but with <strong>&lt;p&gt;</strong> tag (linebreaks preserved with <strong>&lt;br&gt;</strong> tag)
+</h4>
+<p> pre { <br>
+    margin: 5px 0 20px 0; <br>
+    line-height: 1.3em; <br>
+    overflow: auto; <br>
+    }</p>
+
+<h2><strong>&lt;tt&gt;</strong> and <strong>&lt;kbd&gt;</strong> tags</h2>
+<p>The <strong>&lt;tt&gt;</strong> tag uses "monospace" font for text declared
+    inside. But it is already deprecated, and it will be a bad practice to use it.
+    Instead, you can use <strong>&lt;kbd&gt;</strong> tag, which also applies "monospace" font.</p>
+<h4>Example of text with <strong>&lt;kbd&gt;</strong> tag</h4>
+<kbd>This text is formatted with <strong>&lt;kbd&gt;</strong> tag.</kbd>
+<h4>Same text but with <strong>&lt;p&gt;</strong> tag</h4>
+<p>This text is formatted with <strong>&lt;kbd&gt;</strong> tag.</p>
+
+<h2><strong>&lt;var&gt;</strong> tag</h2>
+<p>This tag semantically tells that is used to highlight variables in code or mathematical expressions.
+    It uses "italic" font to highlight text inside.</p>
+<h4>Example of text with <strong>&lt;var&gt;</strong> tag</h4>
+<var>This text is formatted with <strong>&lt;var&gt;</strong> tag.</var>
+<h4>Same text but with <strong>&lt;p&gt;</strong> tag</h4>
+<p>This text is formatted with <strong>&lt;p&gt;</strong> tag.</p>
+
+<h2><strong>&lt;sup&gt;</strong> and <strong>&lt;sub&gt;</strong> tags</h2>
+<p>Both tags are used to transform surrounding text into subscript and superscript, for example like
+    in mathematical formulas.</p>
+<h4>Example of <strong>&lt;sub&gt;</strong> and <strong>&lt;sup&gt;</strong> tags</h4>
+<p>Text sample with <sub>sub</sub> and <sup>sup</sup> tags</p>
+<h4>Same text but with <strong>&lt;p&gt;</strong> tag</h4>
+<p>Text sample with sub and sup tags</p>
+
+<h2><strong>&lt;blockquote&gt;</strong> and <strong>&lt;q&gt;</strong> tags</h2>
+<p>Both tags used to qute some statement, but behave a bit differently. <strong>&lt;blockquote&gt;</strong> tag uses
+    indentation at the beginning of each line and <strong>&lt;q&gt;</strong> tag just wraps the text into double quotes.
+</p>
+<h4>Example of <strong>&lt;blockquote&gt;</strong> and <strong>&lt;q&gt;</strong> tag</h4>
+<blockquote cite="https://blog.hubspot.com/sales/famous-quotes">
+    The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela
+</blockquote>
+<q cite="https://blog.hubspot.com/sales/famous-quotes">The greatest glory in living lies not in never falling, but in
+    rising every time we fall. -Nelson Mandela</q>
+<h4>Same text but with <strong>&lt;p&gt;</strong> tag</h4>
+<p>The greatest glory in living lies not in never falling, but in
+    rising every time we fall. -Nelson Mandela</p>
+
+<h2><strong>&lt;ins&gt;</strong> and <strong>&lt;del&gt;</strong> tags</h2>
+<p>These tags are used to mark some parts of a text as inserted new, or deleted. It also contains useful
+    attributes such as <strong>"cite"</strong> is a link for description of what and why was inserted or deleted and
+    <strong>"datetime"</strong> to preserve date and time <strong>of specified format</strong> when formatting was done.
+</p>
+<h4>Example of <strong>&lt;ins&gt;</strong> and <strong>&lt;del&gt;</strong> tags</h4>
+<p>Sample text with
+    <ins cite="https://blog.hubspot.com/sales/famous-quotes" datetime="2023-03-19T13:50:14Z">new inserted
+    </ins>
+    and
+    <del cite="https://blog.hubspot.com/sales/famous-quotes" datetime="2023-03-19T13:51:14Z">deleted</del>
+    information.
+</p>
+<h4>Same text but with <strong>&lt;p&gt;</strong> tag</h4>
+<p>Sample text with new inserted and deleted information</p>
+
+<h2><strong>&lt;address&gt;</strong> tag</h2>
+<p>This specific tag is used to provide information on the author/owner of the text or page and his contact
+    information. Text inside is written in <strong>"italic"</strong> font.</p>
+<h4>Example of <strong>&lt;address&gt;</strong> tag</h4>
+<address>
+    Written by <a href="mailto:webmaster@example.com" title="Send email">Jon Doe</a>.<br>
+    Visit us at: <a href="https://blog.hubspot.com/sales/famous-quotes" target="_blank"
+                    title="Link to site">example.com</a><br>
+    Box 564, Disneyland<br>
+    USA
+</address>
+<h4>Same text but with <strong>&lt;p&gt;</strong> tag</h4>
+<p> Written by <a href="mailto:webmaster@example.com" title="Send email">Jon Doe</a>.<br>
+    Visit us at: <a href="https://blog.hubspot.com/sales/famous-quotes" target="_blank"
+                    title="Link to site">example.com</a><br>
+    Box 564, Disneyland<br>
+    USA</p>
+
+<h2><strong>&lt;nobr&gt;</strong> and <strong>&lt;wbr&gt;</strong> tags</h2>
+<p>These tags are also used for text formatting, they are responsible for word breaks and no breaks in provided
+    text. If really long text is wrapped with <strong>&lt;nobr&gt;</strong> tag it will cause a scroll bar appearance
+    at the bottom of the page. Otherwise, if you use <strong>&lt;wbr&gt;</strong> to mark places where text should be
+    started
+    with a new line break if needed.</p>
+<h4>Example of <strong>&lt;nobr&gt;</strong> tag</h4>
+<a href="nobr.html" target="_blank" title="Link to example">No breaks example</a>
+<h4>Example of <strong>&lt;wbr&gt;</strong> tag</h4>
+<a href="wbr.html" target="_blank" title="Link to example">With breaks example</a>
+</body>
+</html>
