@@ -5,6 +5,37 @@
     <title>Area tag</title>
 </head>
 <body>
-
+<div style="font-size: 45px; text-align: center">
+    <strong>Area and Map tags</strong>
+</div>
+<div style="font-size: 25PX;">
+    <strong>Area</strong> is a tag that allow to take specific coordinates
+    within image in order to make them clickable. This tag only used with <strong>map</strong> tag.
+    <strong>Map</strong> in it's turn encapsulate <strong>area</strong> tags. Forms supported are
+    <strong>circle/rectangle/polygon</strong>. For circle, you have to specify width, high of the
+    center and radius. For rectangle, you have to specify top left corner width and high and same for
+    bottom right corner. For polygon shape you have to specify each point of the shape you want.
+</div>
+<div>
+    <img style="display: block; margin-left: auto; margin-right: auto; margin-top: 25px; width: 70%;"
+         src="../resources/solar_system_square.jpg" usemap="#planetMap" alt="Solar system">
+    <map name="planetMap">
+        <area shape="circle" coords="140,80,73" alt="Mercury" target="_blank"
+              href="https://ru.wikipedia.org/wiki/Меркурий">
+        <area shape="circle" coords="423,79,73" alt="Venus" target="_blank" href="https://ru.wikipedia.org/wiki/Венера">
+        <area shape="circle" coords="704,83,73" alt="Earth" target="_blank" href="https://ru.wikipedia.org/wiki/Земля">
+        <area shape="rect" coords="88,187,196,284" alt="Mars" target="_blank" href="https://ru.wikipedia.org/wiki/Марс">
+        <area shape="rect" coords="366,193,477,280" alt="Jupiter" target="_blank"
+              href="https://ru.wikipedia.org/wiki/Юпитер">
+        <area shape="rect" coords="686,198,738,245" alt="Saturn" target="_blank"
+              href="https://ru.wikipedia.org/wiki/Сатурн">
+        <area shape="poly" coords="142,430, 115,418, 115,382, 143,364, 169,375, 177,410" alt="uranus" target="_blank"
+              href="https://ru.wikipedia.org/wiki/Уран_(планета)">
+        <area shape="poly" coords="370,440, 421,328, 482,430" alt="Neptune" target="_blank"
+              href="https://ru.wikipedia.org/wiki/Нептун">
+        <area shape="poly" coords="708,464, 656,353, 760,353" alt="Pluto" target="_blank"
+              href="https://ru.wikipedia.org/wiki/Плутон">
+    </map>
+</div>
 </body>
 </html>
