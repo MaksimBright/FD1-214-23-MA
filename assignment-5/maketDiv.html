@@ -3,8 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Div</title>
+    <style>
+        .title {
+            text-align: center;
+            padding: 10px;
+            color: blue;
+            font-weight: bold;
+            font-size: large;
+            background-color: #ADD8E6
+        }
+
+        .selector {
+            float: left;
+            width: 188px;
+            vertical-align: top;
+        }
+
+        .link {
+            text-decoration: underline;
+            color: #5450CB
+        }
+
+        .selectorTitle {
+            padding-left: 15px;
+            font-weight: bolder;
+        }
+
+        .celebrationImage {
+            float: left;
+            padding-left: 15px;
+            padding-right: 15px
+        }
+
+        .contentTitle {
+            text-align: center;
+            font-size: 23px;
+            font-weight: 900
+        }
+
+        .contentText {
+            padding-left: 15px;
+            margin-left: 195px;
+        }
+
+        .sideImages {
+            overflow: hidden;
+            /*margin-top: -23px;*/
+            background: url('resources/ball.png') repeat-y top right,
+            url('resources/yellowBack.png') repeat-y top left;
+        }
+    </style>
 </head>
 <body>
-
+<div class="title">
+    ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!
+</div>
+<div class="sideImages">
+    <div class="selector">
+        <p class="selectorTitle">Виды спорта:</p>
+        <ul>
+            <li><a class="link" href="#" title="Link">Конькобежный спорт</a></li>
+            <li><a class="link" href="#" title="Link">Биатлон</a></li>
+            <li><a class="link" href="#" title="Link">Футбол</a></li>
+            <li><a class="link" href="#" title="Link">Стрельба из лука</a></li>
+            <li><a class="link" href="#" title="Link">Прыжки в длинну</a></li>
+            <li><a class="link" href="#" title="Link">Прыжки в высоту</a></li>
+            <li><a class="link" href="#" title="Link">Фигурное катание</a></li>
+            <li><a class="link" href="#" title="Link">Синхронное плавание</a></li>
+            <li><a class="link" href="#" title="Link">Шахматы</a></li>
+            <li><a class="link" href="#" title="Link">Шашки</a></li>
+        </ul>
+    </div>
+    <div>
+        <p class="contentTitle">ФУТБОЛ</p>
+        <img class="celebrationImage" src="resources/footballCelebration.png"
+             alt="football celebration">
+        <p class="contentText">
+            Футбол &mdash; командный вид спорта, в котором целью является забить мяч в ворота
+            соперника ногами или другими частями тела (кроме рук) большее количетсво раз, чем
+            клманда соперника. <br>
+            Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих
+            принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть
+            некоторые изменения для таких групп, как юниоры, взрослые, женщины и люди с
+            ограниченными физическими возможностямми. Законы очень часто формулировались в общих
+            чертах, которые позволяют упростить их применения в зависимости от характера игры.</p>
+    </div>
+    <div style="clear: both"></div>
+    <div class="title"> ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</div>
+</div>
 </body>
 </html>
